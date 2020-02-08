@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<!-- generated on 06/06/18 12:54:32 by SUMO duarouter Version 0.15.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Veins\sumo-winbin-0.15.0\sumo-0.15.0\bin\Mapas\Beauchef_850\Beauchef_850.net.xml"/>
+        <flow-files value="C:\Veins\sumo-winbin-0.15.0\sumo-0.15.0\bin\Mapas\Beauchef_850\Beauchef_850.flow.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Veins\sumo-winbin-0.15.0\sumo-0.15.0\bin\Mapas\Beauchef_850\Beauchef_850.rou.xml"/>
+    </output>
+
+    <processing>
+        <ignore-errors value="true"/>
+    </processing>
+
+    <time>
+        <begin value="0"/>
+        <end value="100"/>
+    </time>
+
+    <report>
+        <verbose value="true"/>
+        <no-warnings value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/routes_file.xsd">
+    <vType id="CarA" length="5.00" minGap="2.50" maxSpeed="13.80" color="0.00,0.00,1.00">
+        <carFollowing-Krauss accel="0.80" decel="4.50" sigma="0.50"/>
+    </vType>
+    <vehicle id="flow0_0" type="CarA" depart="0.00">
+        <route edges="8000752#5 442511192 448675242#0 448675242#1"/>
+    </vehicle>
+    <vehicle id="flow1_0" type="CarA" depart="0.00">
+        <route edges="333924621 326532540#4 326532540#5 326532540#6 47911677#0 47911677#1 448675243 446171069#0"/>
+    </vehicle>
+</routes>
